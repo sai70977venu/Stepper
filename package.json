@@ -1,0 +1,28 @@
+{
+  "name": "stepper",
+  "version": "1.0.0",
+  "description": "An website for preventing public gatherings at shops like D-Mart or Ratnadeep etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sai70977venu/Stepper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sai70977venu/Stepper/issues"
+  },
+  "homepage": "https://github.com/sai70977venu/Stepper#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
