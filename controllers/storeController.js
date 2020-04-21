@@ -1,4 +1,5 @@
 const Store = require('../models/stores');
+const mongoose = require('mongoose');
 
 const getAllStores = (req, res) => {
     Store.find({})
@@ -15,12 +16,18 @@ const getAllStores = (req, res) => {
 
 const addStore = (req, res) => {
     let obj = {
-        name: req.body.name,
-        location: req.body.location,
-        owner_name: req.body.owner_name,
-        contact_no: req.body.contact_no
-    }
-    let store = "Unsuccessfull";
+        busname: req.body.busname,
+        shopname: req.body.shopname,
+        address: req.body.address,
+        ownname: req.body.ownname,
+        city: req.body.city,
+        state: req.body.state,
+        zip: req.body.zip,
+        shopdesc: req.body.shopdesc,
+        shopcontact: req.body.shopcontact,
+        email: req.body.email,
+        merchent_id:  new mongoose.mongo.ObjectId(req.body.merchent_id)
+    };
     Store.create(obj)
         .then((result) =>{
             console.log(result);
@@ -28,7 +35,8 @@ const addStore = (req, res) => {
         })
         .catch((err) => {
             res.status(500).send({
-                error: 'Error while creating your store'
+                error: 'Error while creating your store',
+                err
             });
         });
 }
