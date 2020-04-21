@@ -30,7 +30,6 @@ const addStore = (req, res) => {
     };
     Store.create(obj)
         .then((result) =>{
-            console.log(result);
             res.send(result);
         })
         .catch((err) => {
