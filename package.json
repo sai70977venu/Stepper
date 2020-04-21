@@ -4,6 +4,7 @@
   "description": "An website for preventing public gatherings at shops like D-Mart or Ratnadeep etc.",
   "main": "index.js",
   "scripts": {
+    "start": "npm i && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
