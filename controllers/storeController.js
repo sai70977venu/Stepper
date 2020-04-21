@@ -33,6 +33,7 @@ const addStore = (req, res) => {
             res.send(result);
         })
         .catch((err) => {
+            console.log(err);
             res.status(500).send({
                 error: 'Error while creating your store',
                 err
