@@ -55,12 +55,6 @@ const storeSchema = new mongoose.Schema({
     minlength: 10,
     maxlength: 10,
   },
-  email: {
-    type: String,
-    required: true,
-    minlength: 10,
-    maxlength: 100,
-  },
   merchent_id: {
     type: mongoose.Schema.Types.ObjectId,
   },

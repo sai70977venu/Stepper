@@ -25,7 +25,6 @@ const addStore = (req, res) => {
         zip: req.body.zip,
         shopdesc: req.body.shopdesc,
         shopcontact: req.body.shopcontact,
-        email: req.body.email,
         merchent_id:  new mongoose.mongo.ObjectId(req.body.merchent_id)
     };
     Store.create(obj)
